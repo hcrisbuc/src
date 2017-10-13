@@ -21,6 +21,7 @@ vb.customize ["modifyvm", :id, "--audio","none"]
 
 
 config.vm.provision "shell", path: "provision/provision.sh"
+    run =:"always"
 end
 end
 Vagrant::Config.run do |config|
