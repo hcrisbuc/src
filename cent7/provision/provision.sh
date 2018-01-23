@@ -6,7 +6,7 @@ echo '''DEVICE="eth1"
         ONBOOT="yes"
         TYPE="Ethernet"
         BOOTPROTO="static"
-        IPADDR="10.2.1.17"
+        IPADDR="10.2.1.19
         NETMASK="255.255.255.0" ''' > /etc/sysconfig/network-scripts/ifcfg-eth1
 
-       /etc/init.d/network restart
+	systemctl restart network 
