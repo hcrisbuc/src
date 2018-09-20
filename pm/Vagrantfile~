@@ -20,8 +20,7 @@ vb.customize ["modifyvm", :id, "--hwvirtex","on"]
 vb.customize ["modifyvm", :id, "--audio","none"]
 
 
-config.vm.provision "shell", path: "/home/cris/src/pm/provision/provision.sh"
-    run =:"always"
+config.vm.provision "shell", path: "provision/provision.sh"
 end
 end
 Vagrant::Config.run do |config|
